@@ -1,82 +1,106 @@
-// =============================
+// =====================================
 // ChicTheory JavaScript
-// =============================
+// =====================================
 
-const searchInput = document.querySelector(".search-box input");
-const searchButton = document.querySelector(".search-box button");
-const cards = document.querySelectorAll(".card");
+document.addEventListener("DOMContentLoaded", function () {
 
-console.log(cards.length);
+    const searchInput = document.querySelector(".search-box input");
+    const searchButton = document.querySelector(".search-box button");
+    const cards = document.querySelectorAll(".card");
 
-searchButton.addEventListener("click", searchProducts);
+    console.log("Cards Found:", cards.length);
 
-searchInput.addEventListener("keyup", function(e){
-    if(e.key === "Enter"){
-        searchProducts();
+    function searchProducts() {
+
+        const value = searchInput.value.trim().toLowerCase();
+
+        cards.forEach(function(card){
+
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            const text = card.textContent.toLowerCase();
+
+            if(
+                title.includes(value) ||
+                text.includes(value) ||
+                value === ""
+            ){
+                card.style.display = "";
+            }
+            else{
+                card.style.display = "none";
+            }
+
+        });
+
     }
-});
 
-function searchProducts(){
+    if(searchButton){
 
-    const value = searchInput.value.toLowerCase();
+        searchButton.addEventListener("click", function(){
 
-    cards.forEach(card=>{
+            searchProducts();
 
-        const text = card.innerText.toLowerCase();
+        });
 
-        if(text.includes(value)){
-            card.style.display="block";
-        }
-        else{
-            card.style.display="none";
-        }
+    }
+
+    if(searchInput){
+
+        searchInput.addEventListener("keyup", function(e){
+
+            if(e.key === "Enter"){
+
+                searchProducts();
+
+            }
+
+        });
+
+    }
+
+    // Smooth Scroll
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+        anchor.addEventListener("click",function(e){
+
+            const href=this.getAttribute("href");
+
+            if(href!=="#"){
+
+                e.preventDefault();
+
+                document.querySelector(href).scrollIntoView({
+
+                    behavior:"smooth"
+
+                });
+
+            }
+
+        });
 
     });
 
-}
-
-// Smooth Scroll
-
-document.querySelectorAll("a").forEach(link=>{
-
-    link.addEventListener("click",function(e){
-
-        const href=this.getAttribute("href");
-
-        if(href.startsWith("#")){
-
-            e.preventDefault();
-
-            document.querySelector(href).scrollIntoView({
-
-                behavior:"smooth"
-
-            });
-
-        }
-
-    });
-
-});
-
-// Navbar Shadow
-
-window.addEventListener("scroll",()=>{
+    // Navbar Shadow
 
     const navbar=document.querySelector(".navbar");
 
-    if(window.scrollY>30){
+    window.addEventListener("scroll",function(){
 
-        navbar.style.boxShadow="0 8px 30px rgba(0,0,0,.12)";
+        if(window.scrollY>20){
 
-    }
+            navbar.style.boxShadow="0 8px 30px rgba(0,0,0,.12)";
 
-    else{
+        }
+        else{
 
-        navbar.style.boxShadow="0 2px 10px rgba(0,0,0,.08)";
+            navbar.style.boxShadow="0 2px 10px rgba(0,0,0,.08)";
 
-    }
+        }
+
+    });
+
+    console.log("✅ ChicTheory Loaded Successfully!");
 
 });
-
-console.log("✅ ChicTheory Loaded");
