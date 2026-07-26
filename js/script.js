@@ -1,1 +1,1 @@
-// JavaScript will be added later
+// JavaScript will be added in the next part
