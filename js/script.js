@@ -6,6 +6,8 @@ const searchInput = document.querySelector(".search-box input");
 const searchButton = document.querySelector(".search-box button");
 const cards = document.querySelectorAll(".card");
 
+console.log(cards.length);
+
 searchButton.addEventListener("click", searchProducts);
 
 searchInput.addEventListener("keyup", function(e){
