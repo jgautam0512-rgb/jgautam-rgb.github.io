@@ -1,1 +1,9 @@
-// JavaScript will be added in the next part
+// ============================
+// ChicTheory JavaScript v1.0
+// ============================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("ChicTheory Loaded Successfully!");
+
+});
