@@ -1,1 +1,1 @@
-// ChicTheory Scripts
+// JavaScript will be added later
