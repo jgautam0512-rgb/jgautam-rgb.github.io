@@ -4,262 +4,801 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ChicTheory Store</title>
+<title>ChicTheory | Curated Amazon Finds</title>
 
 <link rel="stylesheet" href="css/style.css">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="images/favicon.ico">
+
+</head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 
-<!-- Navbar -->
+<header>
 
 <nav class="navbar">
 
 <div class="logo">
-    ChicTheory
-</div>
 
-
-<div class="search-box">
-
-<input 
-type="text" 
-placeholder="Search products...">
-
-<button>
-Search
-</button>
+<a href="#">ChicTheory</a>
 
 </div>
 
+<ul class="nav-links">
 
-<div class="menu">
+<li><a href="#home">Home</a></li>
 
-<a href="#">Home</a>
+<li><a href="#categories">Categories</a></li>
 
-<a href="#products">Products</a>
+<li><a href="#products">Products</a></li>
 
-<a href="#categories">Categories</a>
+<li><a href="#reviews">Reviews</a></li>
 
-</div>
+<li><a href="#contact">Contact</a></li>
 
+</ul>
+
+<a href="#products" class="nav-btn">
+
+Shop Now
+
+</a>
 
 </nav>
 
+</header>
 
+<!-- ================= HERO ================= -->
 
+<section class="hero" id="home">
 
+<div class="hero-left">
 
-<!-- Hero Section -->
+<span class="badge">
 
+✨ Curated Amazon Finds
 
-<section class="hero">
-
+</span>
 
 <h1>
-Upgrade Your Lifestyle With ChicTheory
+
+Discover Products
+
+Worth Buying
+
 </h1>
 
-
 <p>
-Discover stylish home decor, smart kitchen products and trendy accessories.
+
+Find trending home décor, fashion,
+beauty, kitchen essentials, gadgets,
+and lifestyle products—all in one place.
+
 </p>
 
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search products...">
 
 <button>
-Explore Now
+
+Search
+
 </button>
 
-
-</section>
-<!-- Categories Section -->
-
-<section id="categories" class="categories">
-
-
-<h2>
-Shop By Category
-</h2>
-
-
-<div class="category-container">
-
-
-<div class="category-card">
-Home Decor
 </div>
 
+<div class="hero-buttons">
 
-<div class="category-card">
-Kitchen Essentials
-</div>
+<a href="#products" class="primary-btn">
 
+Explore Products
 
-<div class="category-card">
-Fashion Accessories
-</div>
+</a>
 
+<a href="#categories" class="secondary-btn">
+
+Browse Categories
+
+</a>
 
 </div>
 
+</div>
+
+<div class="hero-right">
+
+<img src="images/hero.png" alt="Hero Image">
+
+</div>
 
 </section>
 
+<!-- ================= CATEGORIES ================= -->
 
-
-
-
-
-<!-- Products Section -->
-
-
-<section id="products" class="products">
-
+<section class="categories" id="categories">
 
 <h2>
-Featured Products
+
+Browse Categories
+
 </h2>
 
+<div class="category-grid">
 
+<div class="category">
 
-<div class="product-container">
+🏡
 
+<h3>Home Decor</h3>
 
+</div>
 
-<!-- Product 1 -->
+<div class="category">
+
+👗
+
+<h3>Fashion</h3>
+
+</div>
+
+<div class="category">
+
+💄
+
+<h3>Beauty</h3>
+
+</div>
+
+<div class="category">
+
+💻
+
+<h3>Tech</h3>
+
+</div>
+
+<div class="category">
+
+🍳
+
+<h3>Kitchen</h3>
+
+</div>
+
+<div class="category">
+
+🎁
+
+<h3>Gifts</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="products">
+
+<div class="section-title">
+
+<h2>
+
+Trending Products
+
+</h2>
+
+<p>
+
+Our handpicked Amazon recommendations.
+
+</p>
+
+</div>
+
+<div class="products">
+
+<!-- PRODUCT 1 -->
 
 <div class="card">
 
+<div class="image">
 
-<img src="images/lamp.jpg" alt="Modern Lamp">
+<img src="images/lamp.jpg" alt="Minimal Table Lamp">
 
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Home Decor
+
+</span>
 
 <h3>
-Modern Lamp
+
+Minimal Table Lamp
+
 </h3>
 
-
 <p>
-Elegant lighting for your home
+
+A beautiful bedside lamp with a modern aesthetic.
+
 </p>
 
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
 
-<button>
-Buy Now
-</button>
+Shop on Amazon
 
+</a>
 
 </div>
 
+</div>
 
-
-
-
-<!-- Product 2 -->
-
+<!-- PRODUCT 2 -->
 
 <div class="card">
 
+<div class="image">
 
 <img src="images/kitchenorganizer.jpg" alt="Kitchen Organizer">
 
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Kitchen
+
+</span>
 
 <h3>
+
 Kitchen Organizer
+
 </h3>
 
-
 <p>
-Smart storage solution for kitchen
+
+Keep your kitchen neat and clutter free.
+
 </p>
 
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
 
-<button>
-Buy Now
-</button>
+Shop on Amazon
 
+</a>
 
 </div>
 
+</div>
 
-
-
-
-<!-- Product 3 -->
-
+<!-- PRODUCT 3 -->
 
 <div class="card">
 
+<div class="image">
 
-<img src="images/backpack.jpg" alt="Backpack">
+<img src="images/backpack.jpg" alt="Travel Backpack">
 
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Travel
+
+</span>
 
 <h3>
-Stylish Backpack
+
+Travel Backpack
+
 </h3>
 
-
 <p>
-Perfect backpack for everyday use
+
+Perfect backpack for office, college and travel.
+
 </p>
 
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
 
-<button>
-Buy Now
-</button>
+Shop on Amazon
 
-
-</div>
-
-
+</a>
 
 </div>
 
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="card">
+
+<div class="image">
+
+<img src="images/headphones.jpg" alt="Wireless Headphones">
+
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Tech
+
+</span>
+
+<h3>
+
+Wireless Headphones
+
+</h3>
+
+<p>
+
+Premium sound quality with long battery life.
+
+</p>
+
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
+
+Shop on Amazon
+
+</a>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="card">
+
+<div class="image">
+
+<img src="images/skincare.jpg" alt="Skincare Set">
+
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Beauty
+
+</span>
+
+<h3>
+
+Skincare Essentials
+
+</h3>
+
+<p>
+
+Daily skincare products loved by thousands.
+
+</p>
+
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
+
+Shop on Amazon
+
+</a>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="card">
+
+<div class="image">
+
+<img src="images/chair.jpg" alt="Accent Chair">
+
+</div>
+
+<div class="content">
+
+<span class="tag">
+
+Furniture
+
+</span>
+
+<h3>
+
+Modern Accent Chair
+
+</h3>
+
+<p>
+
+Comfortable chair with premium modern styling.
+
+</p>
+
+<a href="PASTE-AFFILIATE-LINK-HERE" target="_blank">
+
+Shop on Amazon
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
-<!-- About Section -->
 
-<section class="about">
+<!-- ================= WHY CHOOSE US ================= -->
 
+<section class="why-us">
+
+<div class="section-title">
 
 <h2>
-About ChicTheory
+
+Why Choose ChicTheory?
+
 </h2>
 
-
 <p>
-ChicTheory brings carefully selected lifestyle products that make your everyday life beautiful and organized.
+
+Every recommendation is researched before being added.
+
 </p>
 
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="icon">⭐</div>
+
+<h3>Top Rated Products</h3>
+
+<p>
+
+We only recommend highly rated Amazon products.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="icon">💰</div>
+
+<h3>Budget Friendly</h3>
+
+<p>
+
+Amazing finds at affordable prices.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="icon">🚚</div>
+
+<h3>Fast Delivery</h3>
+
+<p>
+
+Products available with quick Amazon shipping.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="icon">❤️</div>
+
+<h3>Personally Curated</h3>
+
+<p>
+
+Only useful products are featured here.
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ================= REVIEWS ================= -->
 
+<section class="reviews" id="reviews">
 
+<div class="section-title">
 
+<h2>
 
-<!-- Footer -->
+What People Love
 
+</h2>
 
-<footer>
+</div>
 
+<div class="review-grid">
+
+<div class="review-card">
+
+★★★★★
 
 <p>
-© 2026 ChicTheory. All Rights Reserved.
+
+"Beautiful recommendations! Found amazing home decor."
+
 </p>
 
+<h4>
+
+— Sarah
+
+</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+"The website is clean and easy to browse."
+
+</p>
+
+<h4>
+
+— Emma
+
+</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+"Great affiliate recommendations without clutter."
+
+</p>
+
+<h4>
+
+— Olivia
+
+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<h2>
+
+Stay Updated
+
+</h2>
+
+<p>
+
+Get notified whenever we publish new Amazon finds.
+
+</p>
+
+<div class="newsletter-box">
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+<div class="section-title">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<h3>
+
+Do you sell these products?
+
+</h3>
+
+<p>
+
+No. We recommend products available on Amazon through affiliate links.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Do I pay extra?
+
+</h3>
+
+<p>
+
+No. You pay the same Amazon price. We may earn a small commission.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+How often are products updated?
+
+</h3>
+
+<p>
+
+Every week with new trending finds.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<div class="footer-container">
+
+<div class="footer-about">
+
+<h2>
+
+ChicTheory
+
+</h2>
+
+<p>
+
+Curated Amazon Finds for Home, Fashion, Beauty,
+Tech, Kitchen and Lifestyle.
+
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<a href="#home">Home</a>
+
+<a href="#categories">Categories</a>
+
+<a href="#products">Products</a>
+
+<a href="#reviews">Reviews</a>
+
+</div>
+
+<div class="footer-links">
+
+<h3>
+
+Legal
+
+</h3>
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Affiliate Disclosure</a>
+
+<a href="#">Terms & Conditions</a>
+
+</div>
+
+<div class="footer-social">
+
+<h3>
+
+Follow Us
+
+</h3>
+
+<a href="#">Pinterest</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">Facebook</a>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>
+
+© 2026 ChicTheory. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
-
-
-
-
-
 
 <script src="js/script.js"></script>
 
