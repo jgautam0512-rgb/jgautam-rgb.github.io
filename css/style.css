@@ -1,6 +1,6 @@
-/* ===================================
+/* ==========================================
    ChicTheory Premium CSS
-=================================== */
+========================================== */
 
 *{
 margin:0;
@@ -15,22 +15,29 @@ scroll-behavior:smooth;
 body{
 
 font-family:'Poppins',sans-serif;
+
 background:#f7f7f7;
+
 color:#222;
-line-height:1.6;
+
+line-height:1.7;
+
+overflow-x:hidden;
 
 }
 
 img{
 
-max-width:100%;
 display:block;
+
+max-width:100%;
 
 }
 
 a{
 
 text-decoration:none;
+
 color:inherit;
 
 }
@@ -46,45 +53,57 @@ padding:90px 8%;
 .navbar{
 
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:80px;
-background:#ffffffee;
-backdrop-filter:blur(15px);
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+top:0;
+
+left:0;
+
+width:100%;
+
+height:80px;
 
 padding:0 8%;
 
-z-index:999;
+background:rgba(255,255,255,.95);
 
-box-shadow:0 3px 20px rgba(0,0,0,.06);
+backdrop-filter:blur(15px);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:1000;
+
+box-shadow:0 8px 25px rgba(0,0,0,.06);
 
 }
 
-.logo a{
+.logo{
 
-font-size:30px;
+font-size:32px;
+
 font-weight:700;
-letter-spacing:1px;
+
+color:#111;
 
 }
 
 .nav-links{
 
 display:flex;
-gap:35px;
 
 list-style:none;
+
+gap:35px;
 
 }
 
 .nav-links a{
 
 font-weight:500;
+
 transition:.3s;
 
 }
@@ -97,9 +116,12 @@ color:#ff4f81;
 
 .nav-btn{
 
-padding:13px 28px;
+padding:14px 28px;
+
 background:#111;
+
 color:#fff;
+
 border-radius:40px;
 
 transition:.3s;
@@ -116,61 +138,79 @@ background:#ff4f81;
 
 .hero{
 
-min-height:100vh;
+padding-top:140px;
 
 display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-gap:60px;
 
-padding-top:120px;
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:70px;
+
+min-height:100vh;
 
 }
 
-.hero-left h1{
+.hero-content h1{
 
 font-size:64px;
+
 line-height:1.1;
-margin:25px 0;
+
+margin:22px 0;
 
 }
 
-.hero-left p{
+.hero-content p{
 
 font-size:19px;
+
 color:#666;
+
 margin-bottom:35px;
 
 }
 
-.badge{
+.hero-badge{
 
 display:inline-block;
 
-background:#ffe8ef;
-
 padding:10px 18px;
 
-border-radius:50px;
+background:#ffe8ef;
+
+color:#ff4f81;
+
+border-radius:30px;
 
 font-weight:600;
 
-color:#ff4f81;
+margin-bottom:20px;
+
+}
+
+.hero-image img{
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
 
 }
 
 .search-box{
 
 display:flex;
-margin-top:30px;
 
 background:#fff;
 
-border-radius:60px;
+border-radius:50px;
 
 overflow:hidden;
 
 box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+margin-top:25px;
 
 }
 
@@ -178,7 +218,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 flex:1;
 
-padding:18px 25px;
+padding:18px 24px;
 
 border:none;
 
@@ -190,13 +230,13 @@ font-size:16px;
 
 .search-box button{
 
-padding:18px 35px;
-
-border:none;
+padding:18px 34px;
 
 background:#111;
 
 color:#fff;
+
+border:none;
 
 cursor:pointer;
 
@@ -213,9 +253,24 @@ background:#ff4f81;
 .hero-buttons{
 
 display:flex;
+
 gap:18px;
 
 margin-top:35px;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+padding:16px 32px;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
 
 }
 
@@ -225,9 +280,11 @@ background:#111;
 
 color:#fff;
 
-padding:16px 35px;
+}
 
-border-radius:40px;
+.primary-btn:hover{
+
+background:#ff4f81;
 
 }
 
@@ -235,27 +292,16 @@ border-radius:40px;
 
 border:2px solid #111;
 
-padding:16px 35px;
-
-border-radius:40px;
-
 }
 
-.hero-right img{
+.secondary-btn:hover{
 
-width:100%;
+background:#111;
 
-border-radius:25px;
-
-box-shadow:0 20px 50px rgba(0,0,0,.15);
+color:#fff;
 
 }
-
-/* ===================================
-   ChicTheory Premium CSS
-=================================== */
-
-/* ================= SECTION TITLE ================= */
+/* ================= SECTION TITLES ================= */
 
 .section-title{
 
@@ -269,15 +315,19 @@ margin-bottom:60px;
 
 font-size:42px;
 
-margin-bottom:15px;
+margin-bottom:12px;
 
 }
 
 .section-title p{
 
+font-size:18px;
+
 color:#666;
 
-font-size:18px;
+max-width:650px;
+
+margin:auto;
 
 }
 
@@ -285,7 +335,17 @@ font-size:18px;
 
 .categories{
 
-background:#ffffff;
+background:#fff;
+
+}
+
+.categories h2{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:50px;
 
 }
 
@@ -297,15 +357,13 @@ grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
 gap:25px;
 
-margin-top:40px;
-
 }
 
 .category{
 
 background:#fff;
 
-padding:40px 20px;
+padding:35px 20px;
 
 border-radius:20px;
 
@@ -313,7 +371,7 @@ text-align:center;
 
 font-size:42px;
 
-box-shadow:0 8px 30px rgba(0,0,0,.08);
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 
 transition:.35s;
 
@@ -333,7 +391,15 @@ margin-top:15px;
 
 transform:translateY(-10px);
 
-box-shadow:0 18px 40px rgba(0,0,0,.15);
+background:#ff4f81;
+
+color:#fff;
+
+}
+
+.category:hover h3{
+
+color:#fff;
 
 }
 
@@ -357,9 +423,11 @@ border-radius:22px;
 
 overflow:hidden;
 
-box-shadow:0 10px 35px rgba(0,0,0,.08);
+box-shadow:0 12px 35px rgba(0,0,0,.08);
 
 transition:.35s;
+
+position:relative;
 
 }
 
@@ -367,11 +435,13 @@ transition:.35s;
 
 transform:translateY(-10px);
 
-box-shadow:0 20px 45px rgba(0,0,0,.15);
+box-shadow:0 20px 45px rgba(0,0,0,.14);
 
 }
 
-.card .image{
+.image{
+
+position:relative;
 
 height:260px;
 
@@ -379,7 +449,7 @@ overflow:hidden;
 
 }
 
-.card .image img{
+.image img{
 
 width:100%;
 
@@ -387,23 +457,61 @@ height:100%;
 
 object-fit:cover;
 
-transition:.4s;
+transition:.45s;
 
 }
 
-.card:hover img{
+.card:hover .image img{
 
 transform:scale(1.08);
 
 }
 
-.card .content{
+.badge{
 
-padding:28px;
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+
+font-weight:600;
+
+color:#fff;
 
 }
 
-.tag{
+.best{
+
+background:#10b981;
+
+}
+
+.trending{
+
+background:#ff4f81;
+
+}
+
+.editor{
+
+background:#111;
+
+}
+
+.content{
+
+padding:26px;
+
+}
+
+.category-tag{
 
 display:inline-block;
 
@@ -413,25 +521,25 @@ color:#ff4f81;
 
 padding:7px 14px;
 
-border-radius:40px;
+border-radius:30px;
 
 font-size:13px;
 
 font-weight:600;
 
-margin-bottom:18px;
+margin-bottom:16px;
 
 }
 
-.card h3{
+.content h3{
 
-font-size:26px;
+font-size:25px;
 
-margin-bottom:15px;
+margin-bottom:14px;
 
 }
 
-.card p{
+.content p{
 
 color:#666;
 
@@ -439,101 +547,34 @@ margin-bottom:22px;
 
 }
 
-.card a{
+.content a{
 
 display:inline-block;
+
+padding:14px 28px;
 
 background:#111;
 
 color:#fff;
 
-padding:14px 28px;
-
 border-radius:40px;
 
 transition:.3s;
 
+font-weight:600;
+
 }
 
-.card a:hover{
+.content a:hover{
 
 background:#ff4f81;
 
 }
-
-/* ===================================
-   ChicTheory Premium CSS
-=================================== */
-
-/* ================= WHY US ================= */
-
-.why-us{
-
-background:#ffffff;
-
-}
-
-.why-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-gap:30px;
-
-}
-
-.why-card{
-
-background:#fff;
-
-padding:35px;
-
-border-radius:22px;
-
-text-align:center;
-
-box-shadow:0 10px 35px rgba(0,0,0,.08);
-
-transition:.35s;
-
-}
-
-.why-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 20px 45px rgba(0,0,0,.15);
-
-}
-
-.why-card .icon{
-
-font-size:48px;
-
-margin-bottom:20px;
-
-}
-
-.why-card h3{
-
-font-size:24px;
-
-margin-bottom:15px;
-
-}
-
-.why-card p{
-
-color:#666;
-
-}
-
-/* ================= REVIEWS ================= */
+/* ================= WHY / REVIEWS ================= */
 
 .reviews{
 
-background:#f8f8f8;
+background:#fff;
 
 }
 
@@ -555,17 +596,19 @@ padding:35px;
 
 border-radius:20px;
 
-box-shadow:0 8px 30px rgba(0,0,0,.08);
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+transition:.35s;
 
 font-size:22px;
-
-transition:.3s;
 
 }
 
 .review-card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-10px);
+
+box-shadow:0 18px 45px rgba(0,0,0,.14);
 
 }
 
@@ -575,13 +618,17 @@ font-size:16px;
 
 color:#666;
 
-margin:20px 0;
+margin:18px 0;
+
+line-height:1.8;
 
 }
 
 .review-card h4{
 
 font-size:18px;
+
+font-weight:600;
 
 }
 
@@ -613,7 +660,9 @@ margin-bottom:15px;
 
 color:#ddd;
 
-margin-bottom:35px;
+max-width:650px;
+
+margin:0 auto 35px;
 
 }
 
@@ -621,15 +670,15 @@ margin-bottom:35px;
 
 display:flex;
 
-max-width:700px;
+max-width:720px;
 
 margin:auto;
 
-overflow:hidden;
+background:#fff;
 
 border-radius:50px;
 
-background:#fff;
+overflow:hidden;
 
 }
 
@@ -667,19 +716,15 @@ transition:.3s;
 
 .newsletter-box button:hover{
 
-background:#e83a70;
+background:#e63b71;
 
 }
-
-/* ===================================
-   ChicTheory Premium CSS
-=================================== */
 
 /* ================= FAQ ================= */
 
 .faq{
 
-background:#ffffff;
+background:#f7f7f7;
 
 }
 
@@ -701,7 +746,7 @@ margin-bottom:20px;
 
 border-radius:18px;
 
-box-shadow:0 8px 25px rgba(0,0,0,.08);
+box-shadow:0 8px 30px rgba(0,0,0,.08);
 
 transition:.3s;
 
@@ -709,7 +754,7 @@ transition:.3s;
 
 .faq-item:hover{
 
-transform:translateY(-5px);
+transform:translateY(-6px);
 
 }
 
@@ -725,12 +770,9 @@ margin-bottom:12px;
 
 color:#666;
 
-font-size:16px;
-
 line-height:1.8;
 
 }
-
 /* ================= FOOTER ================= */
 
 footer{
@@ -739,7 +781,7 @@ background:#111;
 
 color:#fff;
 
-padding:80px 8% 30px;
+padding:80px 8% 35px;
 
 margin-top:80px;
 
@@ -771,19 +813,15 @@ line-height:1.8;
 
 }
 
-.footer-links h3,
-
-.footer-social h3{
-
-margin-bottom:20px;
+.footer-links h3{
 
 font-size:22px;
 
+margin-bottom:18px;
+
 }
 
-.footer-links a,
-
-.footer-social a{
+.footer-links a{
 
 display:block;
 
@@ -795,9 +833,7 @@ transition:.3s;
 
 }
 
-.footer-links a:hover,
-
-.footer-social a:hover{
+.footer-links a:hover{
 
 color:#ff4f81;
 
@@ -805,107 +841,15 @@ color:#ff4f81;
 
 .copyright{
 
-text-align:center;
-
 margin-top:50px;
 
 padding-top:25px;
 
 border-top:1px solid rgba(255,255,255,.15);
 
+text-align:center;
+
 color:#aaa;
-
-}
-
-/* ================= BUTTON EFFECTS ================= */
-
-.primary-btn,
-.secondary-btn,
-.nav-btn,
-.card a,
-.newsletter-box button{
-
-transition:.3s ease;
-
-}
-
-.primary-btn:hover{
-
-background:#ff4f81;
-
-}
-
-.secondary-btn:hover{
-
-background:#111;
-
-color:#fff;
-
-}
-
-.card a:hover{
-
-transform:translateY(-3px);
-
-}
-
-/* ===================================
-   ChicTheory Premium CSS
-=================================== */
-
-/* ================= ANIMATIONS ================= */
-
-@keyframes fadeUp{
-
-0%{
-
-opacity:0;
-transform:translateY(40px);
-
-}
-
-100%{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-.hero-left{
-
-animation:fadeUp .8s ease;
-
-}
-
-.hero-right{
-
-animation:fadeUp 1.2s ease;
-
-}
-
-.card{
-
-animation:fadeUp .8s ease;
-
-}
-
-.category{
-
-animation:fadeUp .8s ease;
-
-}
-
-.review-card{
-
-animation:fadeUp .8s ease;
-
-}
-
-.why-card{
-
-animation:fadeUp .8s ease;
 
 }
 
@@ -926,13 +870,14 @@ background:#f2f2f2;
 ::-webkit-scrollbar-thumb{
 
 background:#ff4f81;
-border-radius:20px;
+
+border-radius:30px;
 
 }
 
 ::-webkit-scrollbar-thumb:hover{
 
-background:#e03b6d;
+background:#e63b71;
 
 }
 
@@ -941,70 +886,76 @@ background:#e03b6d;
 ::selection{
 
 background:#ff4f81;
+
 color:#fff;
 
 }
+/* ================= ANIMATIONS ================= */
 
-/* ================= IMAGE HOVER ================= */
+@keyframes fadeUp{
 
-.image{
+0%{
 
-overflow:hidden;
+opacity:0;
 
-}
-
-.image img{
-
-transition:.5s;
+transform:translateY(40px);
 
 }
 
-.image:hover img{
+100%{
 
-transform:scale(1.1);
+opacity:1;
+
+transform:translateY(0);
 
 }
 
-/* ================= CATEGORY ICON ================= */
+}
+
+.hero-content{
+
+animation:fadeUp .8s ease;
+
+}
+
+.hero-image{
+
+animation:fadeUp 1s ease;
+
+}
+
+.card{
+
+animation:fadeUp .8s ease;
+
+}
 
 .category{
 
-user-select:none;
+animation:fadeUp .8s ease;
 
 }
 
-.category:hover{
+.review-card{
 
-background:#ff4f81;
-color:#fff;
-
-}
-
-.category:hover h3{
-
-color:#fff;
+animation:fadeUp .8s ease;
 
 }
 
-/* ================= LINKS ================= */
+.faq-item{
 
-footer a{
-
-text-decoration:none;
+animation:fadeUp .8s ease;
 
 }
-
-/* ===================================
-   ChicTheory Premium CSS
-=================================== */
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width:1024px){
+@media(max-width:1024px){
 
 .hero{
 
 grid-template-columns:1fr;
+
 text-align:center;
 
 }
@@ -1015,7 +966,7 @@ justify-content:center;
 
 }
 
-.hero-right{
+.hero-image{
 
 margin-top:40px;
 
@@ -1029,49 +980,51 @@ grid-template-columns:1fr 1fr;
 
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .navbar{
 
 flex-direction:column;
+
 height:auto;
+
 padding:20px;
 
 }
 
 .nav-links{
 
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
 margin:20px 0;
 
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
+
 }
 
-.hero-left h1{
+.hero{
+
+padding-top:170px;
+
+}
+
+.hero-content h1{
 
 font-size:42px;
-
-}
-
-.section-title h2{
-
-font-size:34px;
 
 }
 
 .search-box{
 
 flex-direction:column;
+
 border-radius:20px;
 
 }
 
-.search-box input{
-
-width:100%;
-
-}
+.search-box input,
 
 .search-box button{
 
@@ -1082,11 +1035,13 @@ width:100%;
 .newsletter-box{
 
 flex-direction:column;
+
 border-radius:20px;
 
 }
 
 .newsletter-box input,
+
 .newsletter-box button{
 
 width:100%;
@@ -1103,42 +1058,21 @@ text-align:center;
 
 }
 
-@media (max-width:480px){
+@media(max-width:480px){
 
-.hero{
-
-padding-top:140px;
-
-}
-
-.hero-left h1{
+.hero-content h1{
 
 font-size:34px;
 
 }
 
-.hero-left p{
+.section-title h2,
 
-font-size:16px;
+.categories h2,
 
-}
+.newsletter h2{
 
-.badge{
-
-font-size:14px;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-display:block;
-
-width:100%;
-
-text-align:center;
-
-margin-bottom:15px;
+font-size:32px;
 
 }
 
@@ -1148,23 +1082,4 @@ margin:0 10px;
 
 }
 
-.category{
-
-padding:30px 15px;
-
 }
-
-.review-card{
-
-padding:25px;
-
-}
-
-.why-card{
-
-padding:25px;
-
-}
-
-}
-
