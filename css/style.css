@@ -1083,3 +1083,14 @@ margin:0 10px;
 }
 
 }
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 48px;
+    }
+}
